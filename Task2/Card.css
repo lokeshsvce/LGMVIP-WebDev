@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  background-image: url(https://th.bing.com/th/id/OIP.WGxtnw81X7exO2PxiVlL9QHaEK?w=333&h=187&c=7&r=0&o=5&dpr=1.25&pid=1.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+ /* background-position: center;
+  position:relative;*/
+}
+/* header  */
+
+header {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5% 2rem 5%;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0.5rem 1.5rem rgba(34, 34, 34, 0.884);
+  background-color: rgb(226, 88, 25);
+  margin-bottom: 2rem;
+}
+
+header .logo {
+  color: #192a56;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .navbar a {
+  color: rgb(23, 13, 173);
+  font-weight: bolder;
+}
+
+/* Employee Details  */
+
+.Card h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.Card button {
+  font-size: 1.7rem;
+  padding: 1rem 5rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.3);
+  margin: 2rem 0;
+}
+
+.Card button:hover {
+  background-color: #df4a1c;
+  color: white;
+  cursor: pointer;
+}
+
+.card-container .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem 10%;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 5rem;
+  background-color:black;
+}
+
+.card-container .card .user-profile {
+  text-align: left;
+  font-size: 1.7rem;
+  background-color: rgb(222, 233, 226);
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+.card-container .card .user-profile .image {
+  text-align: center;
+}
+
+.card-container .card .user-profile .image img {
+  border-radius: 50%;
+}
+
+.card-container .card .user-profile p {
+  margin-top: 1rem;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 50%;
+  }
+}
